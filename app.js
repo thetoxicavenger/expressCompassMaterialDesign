@@ -26,6 +26,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 
+// live reloading in dev
+// if (process.env.NODE_ENV === 'dev') {
+//   const http = require('http')
+//   const reload = require('reload')
+//   var server = http.createServer(app)
+//   reload(server, app)
+//   server.listen(app.get('port'), function(){
+//     console.log("Web server listening on port " + app.get('port'));
+//   });
+// }
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   const err = new Error('Not Found');

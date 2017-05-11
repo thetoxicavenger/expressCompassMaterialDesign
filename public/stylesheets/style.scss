@@ -1,3 +1,29 @@
 @import "compass/css3";
-@import "customNormalize.css.scss";
 @import "materialize.scss";
+@import "customNormalize.css.scss";
+
+// color scheme: https://coolors.co/be7c4d-92140c-353238-be5a38-c1b4ae
+
+.wrapper {
+  background: #fa857e;
+  color: #F8F8F8;
+  font-family: roboto;
+  padding-top: 20px;
+  min-height: 100vh;
+
+}
+
+.mitchy-headline {
+  background-image: url('../images/ponglogo.png');
+  background-size: cover;
+  /* ping_pong_1x: */
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  width: 201px;
+  height: 120px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.card:first-of-type {
+  background: #353238;
+}
